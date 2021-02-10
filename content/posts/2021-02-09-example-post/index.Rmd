@@ -1,0 +1,19 @@
+---
+title: Example post
+author: Mateo Graciano
+date: '2021-02-09'
+slug: []
+categories:
+  - R
+tags:
+  - R Markdown
+  - regression
+---
+
+## hola mundo
+
+Solo quiero ver estas cosas como se ven
+
+## que tan rapido se actualiza todo?
+
+hello
