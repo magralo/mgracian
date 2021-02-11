@@ -1,0 +1,33 @@
+baseurl: https://example.com/
+title: Hugo Themes
+theme: hugo-swift-theme
+author: Steve Francia
+copyright: Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.
+canonifyurls: yes
+paginate: 4
+pygmentsCodefences: yes
+pygmentsCodefencesGuessSyntax: yes
+params:
+  authors:
+    - bio: It's time to flex. Write a short or not-so-short summary about yourself.
+      fullName: Your Full Name
+      name: yourName
+      photo: myPhotoFile.jpg
+      url: https://myURLofChoice.domain
+  designer:
+    name: Weru
+    url: https://www.linkedin.com/in/dan-weru-profile/
+menu:
+  main:
+    - name: About
+      url: about/
+      weight: 2
+    - name: Development
+      url: categories/development/
+      weight: 3
+    - name: Golang
+      url: categories/golang/
+      weight: 4
+    - name: Go
+      url: tags/go/
+      weight: 5
