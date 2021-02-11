@@ -1,0 +1,27 @@
+---
+title: JAGT 
+author: Mateo Graciano
+date: '2021-02-10'
+slug: []
+categories:
+  - R
+tags:
+  - plot
+subtitle: 'Just another ggplot intro'
+summary: ''
+authors: []
+lastmod: '2021-02-10T21:54:20-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+```{r}
+library(tidyverse)
+iris%>%
+  ggplot(aes(x=Sepal.Length,y=Sepal.Width))+
+  geom_point()
+```
+
