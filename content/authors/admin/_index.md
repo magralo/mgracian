@@ -2,33 +2,26 @@
 authors:
 - admin
 avatar_image: user-full.png
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: My research interests includes data science and analytycs in general. I do this just for fun (And also making a living)
 btn:
 - label: Download Resume
   url: https://sourcethemes.com/academic/docs/install/
 display_education: false
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
-email: ""
+  - course: Msc Data Science and analytics 
+    institution: Universidad Eafit
+    year: 2020
+  - course: Mathematical Engineer 
+    institution: Universidad Eafit
+    year: 2017
+email: "mgracin@eafit.edu.co"
 interests:
 - Artificial Intelligence
 - Computational Linguistics
 - Information Retrieval
-name: Michael Vahn
-organizations:
-- name: Stanford University
-  url: ""
-role: Professor of Artificial Intelligence
+name: Mateo Graciano
+
 social:
 - icon: envelope
   icon_pack: fas
@@ -48,8 +41,10 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-![reviews](../../img/certifacates.jpg)
-
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum. The point of using Lorem Ipsum. distracted by the readable content of a page.
+I am a quick learner that enjoys solving problems, my toolbox includes math, probability, and
+programming skills. I am a high skilled data scientist, i usually try to solve almost any problem
+using a data-driven approach. Thanks to my experience I am not only a programmer that knows
+some machine learning algorithms, my approach to data science projects is based on the CRISP-DM
+methodology. Since 2019 I have been working with cloud (GCP and AWS) technologies, I have skills
+for big data technologies such as Spark, google bigquery, and apache-beam-dataflow. My main
+advantage as a professional is my mathematical modeling prowess.

@@ -18,36 +18,50 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
-  company_url = ""
+  title = "Quant Specialist"
+  company = "Protección "
+  company_url = "https://www.proteccion.com/"
   location = "California"
-  date_start = "2017-01-01"
+  date_start = "2020-03-01"
   date_end = ""
   description = """
   Responsibilities include:
   
-  * Analysing
-  * Modelling
-  * Deploying
+  * Time Series modeling
+  * Deploying machine learning models
+  * Deploying Shiny and Dash apps using shinyproxy
+  * Develop trading strategies
+  * Build suitable benchmarks for our portfolios (incluing ESG measures)
   """
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
-  company_url = ""
+  title = "HR analyst"
+  company = "Protección "
+  company_url = "https://www.proteccion.com/"
   location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  date_start = "2019-01-01"
+  date_end = "2020-03-01"
+  description = """Lead People Analytics iniciative
+  Responsibilities include:
+  
+  * Time Series modeling
+  * Design and follow KPIs
+  * Deploying Shiny apps for a better employee experience 
+  """
 
 [[experience]]
-  title = "Professor"
-  company = "University Y"
-  company_url = ""
+  title = "Investment analyst"
+  company = "Protección "
+  company_url = "https://www.proteccion.com/"
   location = "California"
-  date_start = "2017-01-01"
-  date_end = "2016-12-30"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  date_start = "2017-06-20"
+  date_end = "2018-12-31"
+  description = """
+  Responsibilities include:
+  
+  * Time Series modeling
+  * Develop trading strategies
+  * Deploying Shiny and Dash apps using a windows server
+  """
   
 +++
