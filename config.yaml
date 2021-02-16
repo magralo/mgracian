@@ -1,46 +1,33 @@
-baseurl: https://www.example.com/
-languageCode: en-us
-title: Blackburn Theme Demo
-theme: blackburn
-author: Yoshiharu Yamashita
-copyright: '&copy; 2016. All rights reserved.'
+baseurl: https://example.com/
+title: Hugo Themes
+theme: hugo-swift-theme
+author: Steve Francia
+copyright: Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.
 canonifyurls: yes
-paginate: 10
-indexes:
-  tag: tags
-  topic: topics
+paginate: 4
+pygmentsCodefences: yes
+pygmentsCodefencesGuessSyntax: yes
 params:
-  brand: Blackburn
-  dateFormat: 02 Jan 2006, 15:04
-  disqus: Your Disqus shortname
-  googleAnalytics: Your Google Analytics tracking ID
-  highlightjs: androidstudio
-  subtitle: A Hugo Theme
+  authors:
+    - bio: It's time to flex. Write a short or not-so-short summary about yourself.
+      fullName: Your Full Name
+      name: yourName
+      photo: myPhotoFile.jpg
+      url: https://myURLofChoice.domain
+  designer:
+    name: Weru
+    url: https://www.linkedin.com/in/dan-weru-profile/
 menu:
   main:
-    - identifier: home
-      name: Home
-      pre: <i class='fa fa-home fa-fw'></i>
-      url: /
-      weight: 1
-    - identifier: post
-      name: Posts
-      pre: <i class='fa fa-list fa-fw'></i>
-      url: /post/
+    - name: About
+      url: about/
       weight: 2
-    - identifier: about
-      name: About
-      pre: <i class='fa fa-user fa-fw'></i>
-      url: /about/
+    - name: Development
+      url: categories/development/
       weight: 3
-    - name: Contact
-      pre: <i class='fa fa-phone fa-fw'></i>
-      url: /contact/
+    - name: Golang
+      url: categories/golang/
       weight: 4
-social:
-  facebook: '*'
-  github: yoshiharuyamashita
-  instagram: '*'
-  linkedin: '*'
-  stackoverflow: '*'
-  twitter: '*'
+    - name: Go
+      url: tags/go/
+      weight: 5
