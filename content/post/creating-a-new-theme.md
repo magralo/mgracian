@@ -1,5 +1,6 @@
 ---
 date: "2014-09-28"
+description: Summary of the post
 draft: false
 tags:
 - go
@@ -7,6 +8,7 @@ tags:
 - hugo
 - themes
 title: Creating a New Theme
+twitter_img: img/large_card.png
 ---
 
 ## Introduction

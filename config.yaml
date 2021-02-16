@@ -1,52 +1,58 @@
-baseURL: http://example.com/
+baseURL: /
 languageCode: en-us
-title: Minimal
-theme: minimal
-disqusShortname: username
+title: min_night
+description: An easy reading Hugo blog with night-mode.
+theme: min_night
+disqusShortname: ''
 googleAnalytics: ''
+ignoreFiles:
+  - \.Rmd$
+  - \.Rmarkdown$
+  - public/
+permalinks:
+  post: /:year/:month/:day/:slug/
 params:
-  accent: red
-  author: Calin Tataru
-  backgroundColor: white
-  description: Personal blog theme powered by Hugo
-  font: Raleway
-  githubUsername: '#'
+  accent: '#386890'
+  author: Nate Day
+  backgroundColor: '#f5f5f5'
+  description: An easy reading Hugo blog with night-mode.
+  font: Mina
+  githubUsername: nathancday
   highlight: yes
   highlightLanguages:
+    - r
+    - bash
     - go
-    - haskell
-    - kotlin
-    - scala
-    - swift
-  highlightStyle: default
-  showBorder: yes
+  highlightStyle: lakeside-light
+  logo: favicon/android-chrome-192x192.png
+  twitterAuthor: '@natedayta'
 menu:
   icon:
-    - name: fas fa-envelope
-      url: mailto:me@example.com
+    - name: far fa-envelope
+      url: mailto:nathancday@gmail.com
       weight: 1
     - name: fab fa-github
-      url: https://github.com/username/
+      url: https://github.com/NathanCDay
       weight: 2
     - name: fab fa-twitter
-      url: https://twitter.com/username/
+      url: https://twitter.com/natedayta/
       weight: 3
     - name: fab fa-linkedin
-      url: https://www.linkedin.com/in/username/
+      url: https://www.linkedin.com/in/nathan-day-59b48435/
       weight: 4
     - name: fab fa-stack-overflow
-      url: https://www.stackoverflow.com/username/
+      url: https://www.stackoverflow.com/users/5878751/nate
       weight: 5
   main:
     - name: Home
       url: /
       weight: 1
-    - name: About
-      url: /about/
-      weight: 2
     - name: Posts
       url: /post/
-      weight: 3
+      weight: 2
     - name: Projects
       url: /project/
+      weight: 3
+    - name: Tags
+      url: /tags/
       weight: 4
