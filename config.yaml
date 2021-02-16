@@ -1,49 +1,38 @@
-baseurl: https://example.com/
-title: Clarity
-author: Jane Doe
-copyright: Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.
-paginate: 10
-theme: hugo-clarity
+baseurl: /
+languageCode: en-us
+title: A Hugo website
+theme: hugo-lithium
+googleAnalytics: ''
 disqusShortname: ''
-DefaultContentLanguage: en
-taxonomies:
-  category: categories
-  series: series
-  tag: tags
-markup:
-  goldmark:
-    extensions:
-      typographer: no
-    renderer:
-      hardWraps: no
-      unsafe: yes
-      xhtml: no
-  highlight:
-    codeFences: yes
-    guessSyntax: yes
-    hl_Lines: --
-    lineNoStart: 1
-    lineNos: yes
-    lineNumbersInTable: no
-    noClasses: no
-    tabWidth: 2
+ignoreFiles:
+  - \.Rmd$
+  - \.Rmarkdown$
+  - _cache$
+  - \.knit\.md$
+  - \.utf8\.md$
+permalinks:
+  post: /:year/:month/:day/:slug/
+menu:
+  main:
+    - name: About
+      url: /about/
+    - name: GitHub
+      url: https://github.com/rstudio/blogdown
+    - name: Twitter
+      url: https://twitter.com/rstudio
 params:
-  author: Jane Doe
-  centerLogo: no
-  codeLineNumbers: no
-  codeMaxLines: 7
-  enableMathNotation: no
-  enforceLightMode: no
-  fallBackOgImage: images/thumbnail.png
-  figurePositionLabel: Figure
-  figurePositionShow: no
-  ga_analytics: XXXXXXXXXX
-  introDescription: Technologist, perpetual student, teacher, continual incremental
-    improvement.
-  languageMenuName: "\U0001F310"
-  largeTwitterCard: no
-  logo: logos/logo.png
-  mainSections: post
-  mobileNavigation: left
-  numberOfTagsShown: 14
-  twitter: '@janedoe'
+  MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
+  MathJaxVersion: 2.7.5
+  description: A website built through Hugo and blogdown.
+  favicon: favicon.ico
+  highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
+  highlightjsLang:
+    - r
+    - yaml
+  highlightjsTheme: github
+  highlightjsVersion: 9.12.0
+  logo:
+    alt: Logo
+    height: 50
+    url: logo.png
+    width: 50
