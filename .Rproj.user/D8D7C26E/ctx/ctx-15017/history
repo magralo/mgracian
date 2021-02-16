@@ -1,0 +1,6 @@
+blogdown::build_site()
+blogdown::new_site('yoshiharuyamashita/blackburn')
+blogdown::build_site()
+blogdown::build_site()
+blogdown::new_site('yoshiharuyamashita/blackburn')
+blogdown::stop_server()
