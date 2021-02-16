@@ -1,72 +1,41 @@
-theme: starter-academic
-title: Academic
-baseurl: ''
-copyright: ''
-enableGitInfo: no
-defaultContentLanguage: en
-hasCJKLanguage: no
-defaultContentLanguageInSubdir: no
-removePathAccents: yes
-summaryLength: 30
-paginate: 10
-enableEmoji: yes
+title: Notre-Dame de Paris
+baseURL: https://example.com
+languageCode: en-us
+theme: gohugo-theme-ananke
+resourceDir: ../resources
+DefaultContentLanguage: en
+SectionPagesMenu: main
+Paginate: 3
+googleAnalytics: ''
 enableRobotsTXT: yes
-footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles:
-  - \.ipynb$
-  - .ipynb_checkpoints$
-  - \.Rmd$
-  - \.Rmarkdown$
-  - _cache$
-permalinks:
-  authors: /author/:slug/
-  categories: /category/:slug/
-  event: /talk/:slug/
-  publication_types: /publication-type/:slug/
-  tags: /tag/:slug/
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
-    - WebAppManifest
-    - headers
-  section:
-    - HTML
-    - RSS
-markup:
-  defaultMarkdownHandler: goldmark
-  goldmark:
-    renderer:
-      unsafe: yes
-  highlight:
-    codeFences: no
-  tableOfContents:
-    endLevel: 3
-    startLevel: 2
-imaging:
-  anchor: smart
-  quality: 75
-  resampleFilter: lanczos
-taxonomies:
-  author: authors
-  category: categories
-  publication_type: publication_types
-  tag: tags
-related:
-  includeNewer: yes
-  indices:
-    - name: title
-      weight: 60
-    - name: summary
-      weight: 50
-    - name: tags
-      weight: 80
-    - name: categories
-      weight: 70
-  threshold: 80
-  toLower: yes
-module:
-  imports:
-    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms
-    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy
+languages:
+  en:
+    contentDir: content/en
+    title: My blog
+    weight: 1
+  fr:
+    contentDir: content/fr
+    title: Mon blogue
+    weight: 2
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+params:
+  background_color_class: bg-black
+  description: The last theme you'll ever need. Maybe.
+  facebook: ''
+  favicon: ''
+  featured_image: /images/gohugo-default-sample-hero-image.jpg
+  github: ''
+  gitlab: ''
+  instagram: ''
+  linkedin: ''
+  mastodon: ''
+  recent_posts_number: 2
+  rss: ''
+  site_logo: ''
+  slack: ''
+  stackoverflow: ''
+  twitter: https://twitter.com/GoHugoIO
+  youtube: ''
