@@ -1,13 +1,8 @@
 ---
 date: "2014-03-10"
-draft: false
-tags:
-- go
-- golang
-- hugo
-- jekyll
-- static-site-generator
-title: Migrate from Jekyll
+linktitle: Migrating from Jekyll
+title: Migrate to Hugo from Jekyll
+weight: 10
 ---
 
 ## Move static content to `static`

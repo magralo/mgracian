@@ -1,58 +1,46 @@
-baseURL: /
+baseurl: https://www.example.com/
 languageCode: en-us
-title: min_night
-description: An easy reading Hugo blog with night-mode.
-theme: min_night
-disqusShortname: ''
-googleAnalytics: ''
-ignoreFiles:
-  - \.Rmd$
-  - \.Rmarkdown$
-  - public/
-permalinks:
-  post: /:year/:month/:day/:slug/
+title: Blackburn Theme Demo
+theme: blackburn
+author: Yoshiharu Yamashita
+copyright: '&copy; 2016. All rights reserved.'
+canonifyurls: yes
+paginate: 10
+indexes:
+  tag: tags
+  topic: topics
 params:
-  accent: '#386890'
-  author: Nate Day
-  backgroundColor: '#f5f5f5'
-  description: An easy reading Hugo blog with night-mode.
-  font: Mina
-  githubUsername: nathancday
-  highlight: yes
-  highlightLanguages:
-    - r
-    - bash
-    - go
-  highlightStyle: lakeside-light
-  logo: favicon/android-chrome-192x192.png
-  twitterAuthor: '@natedayta'
+  brand: Blackburn
+  dateFormat: 02 Jan 2006, 15:04
+  disqus: Your Disqus shortname
+  googleAnalytics: Your Google Analytics tracking ID
+  highlightjs: androidstudio
+  subtitle: A Hugo Theme
 menu:
-  icon:
-    - name: far fa-envelope
-      url: mailto:nathancday@gmail.com
-      weight: 1
-    - name: fab fa-github
-      url: https://github.com/NathanCDay
-      weight: 2
-    - name: fab fa-twitter
-      url: https://twitter.com/natedayta/
-      weight: 3
-    - name: fab fa-linkedin
-      url: https://www.linkedin.com/in/nathan-day-59b48435/
-      weight: 4
-    - name: fab fa-stack-overflow
-      url: https://www.stackoverflow.com/users/5878751/nate
-      weight: 5
   main:
-    - name: Home
+    - identifier: home
+      name: Home
+      pre: <i class='fa fa-home fa-fw'></i>
       url: /
       weight: 1
-    - name: Posts
+    - identifier: post
+      name: Posts
+      pre: <i class='fa fa-list fa-fw'></i>
       url: /post/
       weight: 2
-    - name: Projects
-      url: /project/
+    - identifier: about
+      name: About
+      pre: <i class='fa fa-user fa-fw'></i>
+      url: /about/
       weight: 3
-    - name: Tags
-      url: /tags/
+    - name: Contact
+      pre: <i class='fa fa-phone fa-fw'></i>
+      url: /contact/
       weight: 4
+social:
+  facebook: '*'
+  github: yoshiharuyamashita
+  instagram: '*'
+  linkedin: '*'
+  stackoverflow: '*'
+  twitter: '*'
