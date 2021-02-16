@@ -1,46 +1,37 @@
-baseurl: https://www.example.com/
-languageCode: en-us
-title: Blackburn Theme Demo
-theme: blackburn
-author: Yoshiharu Yamashita
-copyright: '&copy; 2016. All rights reserved.'
-canonifyurls: yes
-paginate: 10
-indexes:
-  tag: tags
-  topic: topics
+baseURL: https://example.com/
+languageCode: en-US
+title: Chris Turner
+disqusShortname: ''
+googleAnalytics: ''
+theme: hugo-sustain
+permalinks:
+  post: /:year/:month/:day/:slug
 params:
-  brand: Blackburn
-  dateFormat: 02 Jan 2006, 15:04
-  disqus: Your Disqus shortname
-  googleAnalytics: Your Google Analytics tracking ID
-  highlightjs: androidstudio
-  subtitle: A Hugo Theme
+  author: Chris Turner
+  avatar: img/profile.png
+  custom_css: []
+  custom_js: []
+  description: Describe your website
+  social:
+    Email: email@example.com
+    Github: username
+    LinkedIn: username
+    Medium: username
+    RSS: /blog/index.xml
+    Stackoverflow: username
+    Telegram: username
+    Twitter: username
 menu:
   main:
-    - identifier: home
-      name: Home
-      pre: <i class='fa fa-home fa-fw'></i>
-      url: /
-      weight: 1
-    - identifier: post
-      name: Posts
-      pre: <i class='fa fa-list fa-fw'></i>
-      url: /post/
-      weight: 2
-    - identifier: about
-      name: About
-      pre: <i class='fa fa-user fa-fw'></i>
-      url: /about/
-      weight: 3
-    - name: Contact
-      pre: <i class='fa fa-phone fa-fw'></i>
-      url: /contact/
-      weight: 4
-social:
-  facebook: '*'
-  github: yoshiharuyamashita
-  instagram: '*'
-  linkedin: '*'
-  stackoverflow: '*'
-  twitter: '*'
+    - identifier: blog
+      name: blog
+      url: /blog/
+      weight: 100
+    - identifier: projects
+      name: projects
+      url: /projects/
+      weight: 200
+    - identifier: resume
+      name: resume
+      url: /resume/
+      weight: 300
