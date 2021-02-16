@@ -1,2017 +1,537 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
   <meta name="generator" content="Hugo 0.80.0" />
 
-  
-
-  
-  
-  
-  
-  
-    
-    
-    
-  
-  
-
-  <meta name="author" content="Mateo Graciano">
-
-  
-  
-  
-    
-  
-  <meta name="description" content="">
-
-  
-  <link rel="alternate" hreflang="en-us" href="https://examplesite.org/">
-
-  
-
-
-  
-
-  
-  
-  
-  <meta name="theme-color" content="#fc6f5c">
-  
-
-  
-  
-  
-  
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
-
-    
-    
-    
-      
-    
-    
-      
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
-        
-      
-    
-
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
-    
+  <title>Blackburn Theme Demo</title>
 
     
 
   
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://www.example.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://www.example.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://www.example.com/css/blackburn.css">
 
   
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
-  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 
   
-  
-  
-  <link rel="stylesheet" href="/css/academia.min.bb5ab09ea511c063bce928c9c03b5ec3.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
+ 
   
-  
-  
-  
-
-  
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Academia">
-  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Academia">
-  
-
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
-
-  <link rel="canonical" href="https://examplesite.org/">
-
-  
-  
-  
-  
-    
-    
-  
-  <meta property="twitter:card" content="summary">
-  
-  <meta property="og:site_name" content="Academia">
-  <meta property="og:url" content="https://examplesite.org/">
-  <meta property="og:title" content="Academia">
-  <meta property="og:description" content=""><meta property="og:image" content="https://examplesite.org/img/icon-192.png">
-  <meta property="twitter:image" content="https://examplesite.org/img/icon-192.png"><meta property="og:locale" content="en-us">
-  
-  <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00">
+  <link rel="alternate" type="application/rss+xml" title="Blackburn Theme Demo"
+    href='https://www.example.com/index.xml' />
   
 
   
-
-
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
   
 
+  <link rel="shortcut icon" href="https://www.example.com/img/favicon.ico" type="image/x-icon" />
 
-
-
-
-  <title>Academia</title>
+  
+  
 
 </head>
 
 
-<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
-
-  <aside class="search-results" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        
-        
-      </div>
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
-
+<body>
+<div id="layout">
 
   
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
-  <div class="container">
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
 
-    
-      <a class="navbar-brand" href="/">Academia</a>
+  
+  <a class="pure-menu-heading brand" href="https://www.example.com/">Blackburn</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
       
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
-      </button>
       
-
-    
-    <div class="collapse navbar-collapse" id="navbar">
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.example.com/"><i class='fa fa-home fa-fw'></i>Home</a>
       
-      
-      <ul class="navbar-nav ml-auto">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#about" data-target="#about"><span>Home</span></a>
         </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#posts" data-target="#posts"><span>Posts</span></a>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.example.com/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
         </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#projects" data-target="#projects"><span>Projects</span></a>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.example.com/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
         </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#publications" data-target="#publications"><span>Publications</span></a>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.example.com/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
         </li>
-
-        
-        
-
       
-
-        
-
-        
-
-        
-
-        
-        <li class="nav-item">
-          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-        </li>
-        
-
-      </ul>
-    </div>
+    </ul>
   </div>
-</nav>
 
-
-  
-
-
-<span class="js-widget-page d-none"></span>
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="hero" class="home-section wg-hero   " style="background-color: #fff;" >
-    <div class="container">
-      
-
-
-
-
-<div class="row">
-  <div class="col-md-6 order-md-1 text-center text-md-left align-self-center">
-
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
 
     
-    <div><h2 id="my-name-is-mateo-graciano-and-im-a-data-scientist-with-special-interest-in-the-real-life-application-of-machine-learning-models">My name is <strong>Mateo Graciano</strong> and I&rsquo;m a <strong>Data Scientist</strong> with special interest in the real life application of machine learning models.</h2>
-<p>I am a quick learner that enjoys solving problems, my toolbox includes math, probability, and
-programming skills. Thanks to my experience I am not only a programmer that knows
-some machine learning algorithms, my approach to data science projects is based on the CRISP-DM
-methodology.</p>
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href='https://www.example.com/index.xml'><i
+          class="fas fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/*" rel="me" target="_blank"><i class="fab fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/*" rel="me" target="_blank"><i class="fab fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://instagram.com/*" rel="me" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/*" rel="me" target="_blank"><i class="fab fa-linkedin fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/yoshiharuyamashita" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/*" rel="me" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
 </div>
-    
 
-    
-    
 
-  
-  
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
   </div>
-  <div class="col-10 mx-auto col-md-6 order-md-2 hero-media">
-    <img class="hero-img img-fluid" src="/img/user-2.jpg" alt="">
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="skills" class="home-section wg-featurette   "  >
-    <div class="container">
-      
-
-
-<div class="row featurette">
-  
-  <div class="col-12 section-heading">
-    <h1>Skills</h1>
-    <p>I AM REALLY GOOD AT THE FOLLOWING TECHNICAL SKILLS</p>
-  </div>
-  
-
-  
-
-  
-  
-  
-  
-  
-  
-  <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-    <div class="position-relative py-2 shadow featurette-margin">
-      <div class="progress-bar" style="width:95%"></div>
-      <div class="featurette-icon"><i class="fab fa-searchengin"></i></div>
-      <h3>Problem solving</h3>
-      <p>95%</p>
-    </div>
-  </div>
-  
-  
-  
-  
-  
-  
-  <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-    <div class="position-relative py-2 shadow featurette-margin">
-      <div class="progress-bar" style="width:95%"></div>
-      <div class="featurette-icon"><i class="fas fa-chart-line"></i></div>
-      <h3>R</h3>
-      <p>95%</p>
-    </div>
-  </div>
-  
-  
-  
-  
-  
-  
-  <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-    <div class="position-relative py-2 shadow featurette-margin">
-      <div class="progress-bar" style="width:90%"></div>
-      <div class="featurette-icon"><i class="fas fa-chart-line"></i></div>
-      <h3>Statistics</h3>
-      <p>90%</p>
-    </div>
-  </div>
-  
-  
-  
-  
-  
-  
-  <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-    <div class="position-relative py-2 shadow featurette-margin">
-      <div class="progress-bar" style="width:90%"></div>
-      <div class="featurette-icon"><i class="fab fa-searchengin"></i></div>
-      <h3>Research</h3>
-      <p>90%</p>
-    </div>
-  </div>
-  
-  
-  
-  
-  
-  
-  <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-    <div class="position-relative py-2 shadow featurette-margin">
-      <div class="progress-bar" style="width:80%"></div>
-      <div class="featurette-icon"><i class="fas fa-chart-line"></i></div>
-      <h3>Python</h3>
-      <p>80%</p>
-    </div>
-  </div>
-  
-  
-  
-  
-  
-  
-  <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-    <div class="position-relative py-2 shadow featurette-margin">
-      <div class="progress-bar" style="width:80%"></div>
-      <div class="featurette-icon"><i class="fas fa-chart-line"></i></div>
-      <h3>SQL</h3>
-      <p>80%</p>
-    </div>
-  </div>
-  
-  
-  
-  
-  
-  
-  <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-    <div class="position-relative py-2 shadow featurette-margin">
-      <div class="progress-bar" style="width:80%"></div>
-      <div class="featurette-icon"><i class="fas fa-chart-line"></i></div>
-      <h3>CI/CD skils</h3>
-      <p>80%</p>
-    </div>
-  </div>
-  
-</div>
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="experience" class="home-section wg-experience   "  >
-    <div class="container">
-      
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Experience</h1>
-    <p>PREVIOUS ASSOCIATIONS THAT HELPED TO GATHER EXPERIENCE</p>
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-    
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col ">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border exp-fill">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Quant Specialist</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.proteccion.com/" target="_blank" rel="noopener">Protección</a></h4>
-            <div class="text-muted exp-meta">
-              Mar 2020 –
-              
-                Present
-              
-              
-                <span class="middot-divider"></span>
-                <span>California</span>
-              
-            </div>
-            <div class="card-text"><p>Responsibilities include:</p>
-<ul>
-<li>Time Series modeling</li>
-<li>Deploying machine learning models</li>
-<li>Deploying Shiny and Dash apps using shinyproxy</li>
-<li>Develop trading strategies</li>
-<li>Build suitable benchmarks for our portfolios (incluing ESG measures)</li>
-</ul>
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border ">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">HR analyst</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.proteccion.com/" target="_blank" rel="noopener">Protección</a></h4>
-            <div class="text-muted exp-meta">
-              Jan 2019 –
-              
-                Mar 2020
-              
-              
-                <span class="middot-divider"></span>
-                <span>California</span>
-              
-            </div>
-            <div class="card-text"><p>Lead People Analytics iniciative
-Responsibilities include:</p>
-<ul>
-<li>Time Series modeling</li>
-<li>Design and follow KPIs</li>
-<li>Deploying Shiny apps for a better employee experience</li>
-</ul>
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border ">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col ">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Investment analyst</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.proteccion.com/" target="_blank" rel="noopener">Protección</a></h4>
-            <div class="text-muted exp-meta">
-              Jun 2017 –
-              
-                Dec 2018
-              
-              
-                <span class="middot-divider"></span>
-                <span>California</span>
-              
-            </div>
-            <div class="card-text"><p>Responsibilities include:</p>
-<ul>
-<li>Time Series modeling</li>
-<li>Develop trading strategies</li>
-<li>Deploying Shiny and Dash apps using a windows server</li>
-</ul>
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
   </div>
 </div>
 
-    </div>
-  </section>
+</div>
 
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Blackburn Theme Demo</h1>
+  <h2>A Hugo Theme</h2>
+</div>
+
+<div class="content">
   
-  
-  
+    <article>
+  <header>
+    <h2><a href="https://www.example.com/post/creating-a-new-theme/">Creating a New Theme</a></h2>
 
-  
+    <div class="post-meta">
 
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="posts" class="home-section wg-pages   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 section-heading text-center">
-    <h1>Recent Posts</h1>
-    <p>MY FANS DON&rsquo;T FEEL LIKE I HOLD ANYTHING BACK FROM THEM</p>
-    
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>28 Sep 2014, 00:00</time>
   </div>
-  <div class="col-12">
-    <div class="row justify-content-center">
-      
-      
-      <div class="col-lg-4 col-md-6 mb-4">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="card-simple" itemscope itemtype="http://schema.org/BlogPosting">
-    
-    
-    
-
-    <div class="card-body">
-    <h3 class="article-title mb-1 mt-0" itemprop="name">
-      <a href="/post/2021-02-10-jagt-just-another-ggplot-intro/" itemprop="url">JAGT</a>
-    </h3>
-    
-    
-
-
-
-<meta content="2021-02-10 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2021-02-10 21:54:20 -0500 -05" itemprop="dateModified">
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    <time>Feb 10, 2021</time>
-  </span>
-  
 
   
 
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder"></i>
-    <a href="/categories/r/">R</a></span>
   
 
   
 
 </div>
 
+  </header>
+
+  <p>
+  Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.
+We&rsquo;ll start with creating a new site with a very basic template.
+  </p>
+
+  
+  <footer>
+    <a href="https://www.example.com/post/creating-a-new-theme/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://www.example.com/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>10 Mar 2014, 00:00</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+  </header>
+
+  <p>
+  Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &lt;root&gt;/ ▾ images/ logo.png  should become
+▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.
+  </p>
+
+  
+  <footer>
+    <a href="https://www.example.com/post/migrate-from-jekyll/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://www.example.com/post/2021-02-16-kujsglhas/">kujsglhas</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>16 Feb 2021, 00:00</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  library(tidyverse)## Warning: replacing previous import &#39;vctrs::data_frame&#39; by &#39;tibble::data_frame&#39;## when loading &#39;dplyr&#39;## -- Attaching packages --------------------------------------------------------------------------------------------------------------------------------------------- tidyverse 1.3.0 --## v ggplot2 3.3.2 v purrr 0.3.4## v tibble 3.0.3 v dplyr 1.0.1## v tidyr 1.1.1 v stringr 1.4.0## v readr 1.3.1 v forcats 0.5.0## -- Conflicts ------------------------------------------------------------------------------------------------------------------------------------------------ tidyverse_conflicts() --## x dplyr::filter() masks stats::filter()## x dplyr::lag() masks stats::lag()p &lt;- iris%&gt;%ggplot(aes(Sepal.
+  </p>
+
+  
+  <footer>
+    <a href="https://www.example.com/post/2021-02-16-kujsglhas/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://www.example.com/post/2020-12-01-r-rmarkdown/">Hello R Markdown</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>01 Dec 2020, 21:13</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
     
+      <a class="post-taxonomy-tag" href="https://www.example.com/tags/r-markdown">R Markdown</a>&nbsp;&#47;
     
-    <div class="article-style" itemprop="articleBody">
-      
-
-
-<pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## Warning: replacing previous import &#39;vctrs::data_frame&#39; by &#39;tibble::data_frame&#39;
-## when loading &#39;dplyr&#39;</code></pre>
-<pre><code>## -- Attaching packages --------------------------------------------------------------------------------------------------------------------------------------------- tidyverse 1.3.0 --</code></pre>
-<pre><code>## v ggplot2 3.3.2     v purrr   0.3.4
-## v tibble  3.0.3     v dplyr   1.0.1
-## v tidyr   1.1.1     v stringr 1.4.0
-## v readr   1.3.1     v forcats 0.5.0</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------------------------------------------------------------------------------------------------------------ tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>iris%&gt;%
-  ggplot(aes(x=Sepal.Length,y=Sepal.Width))+
-  geom_point()</code></pre>
-<p><img src="https://examplesite.org/post/2021-02-10-jagt-just-another-ggplot-intro/index.en_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-
-    </div>
+      <a class="post-taxonomy-tag" href="https://www.example.com/tags/plot">plot</a>&nbsp;&#47;
     
-
-
+      <a class="post-taxonomy-tag" href="https://www.example.com/tags/regression">regression</a>
     
   </div>
-</div>
-      </div>
-      
-      
-      
-      <div class="col-lg-4 col-md-6 mb-4">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="card-simple" itemscope itemtype="http://schema.org/BlogPosting">
-    
-    
-    
-
-    <div class="card-body">
-    <h3 class="article-title mb-1 mt-0" itemprop="name">
-      <a href="/post/2020-12-01-r-rmarkdown/" itemprop="url">Hello R Markdown</a>
-    </h3>
-    
-    
-
-
-
-<meta content="2020-12-01 21:13:14 -0500 -05" itemprop="datePublished">
-<meta content="2020-12-01 21:13:14 -0500 -05" itemprop="dateModified">
-
-<div class="article-metadata">
-
   
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    <time>Dec 1, 2020</time>
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder"></i>
-    <a href="/categories/r/">R</a></span>
-  
-
   
 
 </div>
 
-    
-    
-    <div class="article-style" itemprop="articleBody">
-      R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+  </header>
+
+  <p>
+  R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.
-    </div>
-    
-
-
-    
-  </div>
-</div>
-      </div>
-      
-      
-      
-      <div class="col-lg-4 col-md-6 mb-4">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="card-simple" itemscope itemtype="http://schema.org/BlogPosting">
-    
-    
-    
-    
-    <a href="/post/jupyter/">
-      <img src="/post/jupyter/featured_hu17228671acc7297decf3359d3864d9fb_379701_918x517_fill_q90_lanczos_smart1.jpg" class="article-banner" itemprop="image" alt="">
-    </a>
-    
-
-    <div class="card-body">
-    <h3 class="article-title mb-1 mt-0" itemprop="name">
-      <a href="/post/jupyter/" itemprop="url">Display Jupyter Notebooks with academia</a>
-    </h3>
-    
-    
-
-
-
-<meta content="2019-02-05 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-02-05 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-
-<div class="article-metadata">
+  </p>
 
   
+  <footer>
+    <a href="https://www.example.com/post/2020-12-01-r-rmarkdown/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://www.example.com/post/goisforlovers/">(Hu)go Template Primer</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>02 Apr 2014, 00:00</time>
+  </div>
+
+  
+
+  
+
   
   
   
   <div>
+    <i class="fa fa-tags fa-fw"></i>
     
-
-
-
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Mateo Graciano</a></span>
-
+      <a class="post-taxonomy-tag" href="https://www.example.com/tags/go">go</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://www.example.com/tags/golang">golang</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://www.example.com/tags/templates">templates</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://www.example.com/tags/themes">themes</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://www.example.com/tags/development">development</a>
+    
   </div>
   
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    <time>Feb 5, 2019</time>
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-
-  
-  
-
   
 
 </div>
 
-    
-    
-    <div class="article-style" itemprop="articleBody">
-      Learn how to blog in academia using Jupyter notebooks
-    </div>
-    
+  </header>
 
-
-    
-  </div>
-</div>
-      </div>
-      
-      
-      
-      <div class="col-lg-4 col-md-6 mb-4">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="card-simple" itemscope itemtype="http://schema.org/BlogPosting">
-    
-    
-    
-    
-    <a href="/post/snail/">
-      <img src="/post/snail/featured_hu4ab823d7c0812bfb65b9cd805c14c8ad_441301_918x517_fill_q90_lanczos_smart1.jpg" class="article-banner" itemprop="image" alt="">
-    </a>
-    
-
-    <div class="card-body">
-    <h3 class="article-title mb-1 mt-0" itemprop="name">
-      <a href="/post/snail/" itemprop="url">A Study of Snail Behavior</a>
-    </h3>
-    
-    
-
-
-
-<meta content="2016-04-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-04-17 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-
-<div class="article-metadata">
+  <p>
+  Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+This document is a brief primer on using go templates.
+  </p>
 
   
+  <footer>
+    <a href="https://www.example.com/post/goisforlovers/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://www.example.com/post/hugoisforlovers/">Getting Started with Hugo</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>02 Apr 2014, 00:00</time>
+  </div>
+
+  
+
+  
+
   
   
   
   <div>
+    <i class="fa fa-tags fa-fw"></i>
     
-
-
-
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Mateo Graciano</a></span>
-
+      <a class="post-taxonomy-tag" href="https://www.example.com/tags/go">go</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://www.example.com/tags/golang">golang</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://www.example.com/tags/hugo">hugo</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://www.example.com/tags/development">development</a>
+    
   </div>
   
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    <time>Apr 17, 2019</time>
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-
-  
-  
-
   
 
 </div>
 
-    
-    
-    <div class="article-style" itemprop="articleBody">
-      Create a beautifully simple website in under 10 minutes.
-    </div>
-    
+  </header>
 
-
-    
-  </div>
-</div>
-      </div>
-      
-      
-      
-      <div class="col-lg-4 col-md-6 mb-4">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="card-simple" itemscope itemtype="http://schema.org/BlogPosting">
-    
-    
-    
-    
-    <a href="/post/getting-started/">
-      <img src="/post/getting-started/featured_hue69fb4adfc11ca9c4444dcd3a513aa00_325031_918x517_fill_q90_lanczos_smart1.jpg" class="article-banner" itemprop="image" alt="">
-    </a>
-    
-
-    <div class="card-body">
-    <h3 class="article-title mb-1 mt-0" itemprop="name">
-      <a href="/post/getting-started/" itemprop="url">academia: the website builder for Hugo</a>
-    </h3>
-    
-    
-
-
-
-<meta content="2016-04-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-04-17 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-
-<div class="article-metadata">
+  <p>
+  Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at installing hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:
+  </p>
 
   
+  <footer>
+    <a href="https://www.example.com/post/hugoisforlovers/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
   
-  
-  
-  <div>
-    
+</article>
 
-
-
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Mateo Graciano</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    <time>Apr 17, 2019</time>
-  </span>
   
 
   
 
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-
-  
-  
-
-  
 
 </div>
 
-    
-    
-    <div class="article-style" itemprop="articleBody">
-      Create a beautifully simple website in under 10 minutes.
-    </div>
-    
-
-
-    
-  </div>
 </div>
-      </div>
-      
-      
-
-      
-
-    </div>
-  </div>
 </div>
-    </div>
-  </section>
+<script src="https://www.example.com/js/ui.js"></script>
+<script src="https://www.example.com/js/menus.js"></script>
 
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="publications" class="home-section wg-pages   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 section-heading text-center">
-    <h1>Recent Publications</h1>
-    <p>Some publications i have recently published</p>
-    
-  </div>
-  <div class="col-12">
-    <div class="row justify-content-center">
-      
-      
-      <div class="col-lg-4 col-md-6 mb-4">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="card-simple" itemscope itemtype="http://schema.org/ScholarlyArticle">
-    
-    
-    
-    
-    <a href="/publication/preprint/">
-      <img src="/publication/preprint/featured_hu559a5add5185b02575aa8333502ab2cc_220813_918x517_fill_q90_lanczos_smart1.jpg" class="article-banner" itemprop="image" alt="">
-    </a>
-    
-
-    <div class="card-body">
-    <h3 class="article-title mb-1 mt-0" itemprop="name">
-      <a href="/publication/preprint/" itemprop="url">An example preprint / working paper</a>
-    </h3>
-    
-    
-
-
-
-<meta content="2019-04-07 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-04-07 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Mateo Graciano</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    <time>April 2019</time>
-  </span>
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="pub-publication">
-    
-  </span>
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-
-</div>
-
-    
-    
-    <div class="article-style" itemprop="articleBody">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
-    </div>
-    
-
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-  </div>
-</div>
-      </div>
-      
-      
-      
-      <div class="col-lg-4 col-md-6 mb-4">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
-<div class="card-simple" itemscope itemtype="http://schema.org/ScholarlyArticle">
-    
-    
-    
-    
-    <a href="/publication/journal-article/">
-      <img src="/publication/journal-article/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_214168_918x517_fill_q90_lanczos_smart1.jpg" class="article-banner" itemprop="image" alt="">
-    </a>
-    
 
-    <div class="card-body">
-    <h3 class="article-title mb-1 mt-0" itemprop="name">
-      <a href="/publication/journal-article/" itemprop="url">An example journal article</a>
-    </h3>
-    
-    
-
-
-
-<meta content="2015-09-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2015-09-01 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Mateo Graciano</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/robert-ford/">Robert Ford</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    <time>September 2015</time>
-  </span>
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="pub-publication">
-    
-      <em>Journal of Source Themes, 1</em>(1)
-    
-  </span>
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-
-</div>
-
-    
-    
-    <div class="article-style" itemprop="articleBody">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
-    </div>
-    
-
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-  </div>
-</div>
-      </div>
-      
-      
-      
-      <div class="col-lg-4 col-md-6 mb-4">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="card-simple" itemscope itemtype="http://schema.org/ScholarlyArticle">
-    
-    
-    
-    
-    <a href="/publication/conference-paper/">
-      <img src="/publication/conference-paper/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_312700_918x517_fill_q90_lanczos_smart1.jpg" class="article-banner" itemprop="image" alt="">
-    </a>
-    
-
-    <div class="card-body">
-    <h3 class="article-title mb-1 mt-0" itemprop="name">
-      <a href="/publication/conference-paper/" itemprop="url">An example conference paper</a>
-    </h3>
-    
-    
-
-
-
-<meta content="2013-07-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2013-07-01 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Mateo Graciano</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/robert-ford/">Robert Ford</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    <time>July 2013</time>
-  </span>
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="pub-publication">
-    
-      In <em>STC</em>
-    
-  </span>
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-
-</div>
-
-    
-    
-    <div class="article-style" itemprop="articleBody">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
-    </div>
-    
-
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
+<script>
   
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+    ga('create', 'Your Google Analytics tracking ID', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-  </div>
-</div>
-      </div>
-      
-      
-
-      
-
-    </div>
-  </div>
-</div>
-    </div>
-  </section>
-
-
-
-      
-
-    
-    
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-
-      
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
-        
-      
-
-      
-      
-    
-
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
-    
-
-    
-    
-    
-
-    
-    
-    <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <script src="/js/academia.min.7276a6a3624de715a5c7f54c7c07696d.js"></script>
-
-    
-
-
-
-
-
-
-  
-  <div class="container">
-    <footer class="site-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        
-        <p>
-          Copyright © 2021 &middot; 
-          Powered by
-          <a href="https://gethugothemes.com" target="_blank" rel="noopener">Gethugothemes</a>
-        </p>
-      </div>
-      <div class="col-md-6">
-        <ul class="list-inline network-icon text-right">
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          <li class="list-inline-item">
-            <a href="https://twitter.com/Twitter" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-          </li>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          <li class="list-inline-item">
-            <a href="skype:echo123?call"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
-          </li>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          <li class="list-inline-item">
-            <a href="https://keybase.io/" target="_blank" rel="noopener" title="Chat on Keybase"><i class="fab fa-keybase" aria-hidden="true"></i></a>
-          </li>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          <li class="list-inline-item">
-            <a href="https://discourse.gohugo.io" target="_blank" rel="noopener" title="Discuss on Forum"><i class="fas fa-comments" aria-hidden="true"></i></a>
-          </li>
-          
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-  </div>
-  
-
-  
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
 
 </body>
 </html>
+
