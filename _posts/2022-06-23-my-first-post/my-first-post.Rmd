@@ -1,0 +1,34 @@
+---
+title: "My first post"
+description: |
+  This is just a post to check how does this work with plots ant embeded html outputs
+date: 2022-06-23
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(plotly)
+```
+
+# Basic plots
+
+```{r }
+iris%>%
+  ggplot(aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point()
+```
+
+# Embeded html
+
+```{r }
+ggplotly(
+iris%>%
+  ggplot(aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point()
+)
+```
+
+

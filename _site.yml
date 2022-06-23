@@ -1,7 +1,7 @@
 name: "mgracian2"
-title: "mgracian "
+title: "Fun Data Science"
 description: |
-  mgracian 
+  Mateo Graciano's personal website 
 output_dir: "_site"
 navbar:
   right:
@@ -9,4 +9,7 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+listing:
+  posts:
+    - 2022-06-23-my-first-post
 output: distill::distill_article

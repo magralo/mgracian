@@ -1,0 +1,14 @@
+[
+  {
+    "path": "posts/2022-06-23-my-first-post/",
+    "title": "My first post",
+    "description": "This is just a post to check how does this work with plots ant embeded html outputs",
+    "author": [],
+    "date": "2022-06-23",
+    "categories": [],
+    "contents": "\r\nBasic plots\r\n\r\n\r\n\r\nEmbeded html\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2022-06-23-my-first-post/my-first-post_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2022-06-23T11:42:55-05:00",
+    "input_file": {}
+  }
+]
