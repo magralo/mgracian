@@ -2,11 +2,11 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this site",
-      "description": "Some additional details about the website",
+      "title": "About this site (and me)",
+      "description": "This is a simple personal website where i will try to showcast some of my projects.\n",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-06-22T23:29:41-05:00"
+      "contents": "\r\nI am a Data Scientist with 5+ years of experience who is also a\r\nproblem solver that has faced a wide range of problems such as portfolio\r\noptimization, risk profiling (Quant finance) predicting productivity of\r\nsalespersons, and talent churn (people analytics), in those problems I\r\nhave worked from the very understanding of the problem to the\r\ndeployment/implementation of the proposed solution. I have a great\r\ntoolbox that includes a deep understanding of statistics, math, and\r\ncoding. My tech stack includes R, Python, and SQL.\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-06-23T11:22:13-05:00"
     },
     {
       "path": "index.html",
@@ -14,7 +14,7 @@
       "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-06-22T23:29:42-05:00"
+      "last_modified": "2022-06-23T11:22:13-05:00"
     }
   ],
   "collections": []

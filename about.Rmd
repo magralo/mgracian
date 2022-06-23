@@ -1,10 +1,13 @@
 ---
-title: "About this site"
+title: "About this site (and me)"
 description: |
-  Some additional details about the website
+  This is a simple personal website where i will try to showcast some of my projects.
+  
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+I am a Data Scientist with 5+ years of experience who is also a problem solver that has faced a wide range of problems such as portfolio optimization, risk profiling (Quant finance) predicting productivity of salespersons, and talent churn (people analytics), in those problems I have worked from the very understanding of the problem to the deployment/implementation of the proposed solution.
+I have a great toolbox that includes a deep understanding of statistics, math, and coding. My tech stack includes R, Python, and SQL.
